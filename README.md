@@ -2,6 +2,10 @@
 
 You can log your daily workout regimen along with notes to help improve your workout routine.
 
+##Live Link Below
+
+https://betterthan-yesterday.herokuapp.com/bty
+
 ## Goals 
 - Create new workout log
 - Modify workout entry
