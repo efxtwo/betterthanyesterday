@@ -1,0 +1,22 @@
+<div class="blended">
+    <h1>Workout Post</h1>
+    <h3><%=btys.date%></h3>
+    
+    <h4>Current weight: <%=btys.weight%></h4>
+
+    <div>
+        <h4>Exercise List:</h4>
+        <p><%= btys.workoutList%></p>
+    </div>
+    <div>
+        <h4>Additional Notes</h4>
+        <p><%= btys.notes%></p>
+    </div>
+    <br/>
+    </div>
+    <div class="navigation">
+
+         <input type="button" class="btn btn-primary" value="Modify" onclick="location.href='/bty/<%=btys.id%>/edit'">
+    
+        <a href="/bty">Return</a>
+    </div>

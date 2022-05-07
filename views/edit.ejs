@@ -1,0 +1,47 @@
+
+<body>
+    <div class="new">
+    <h1>Workout Entry</h1>
+    <br/>
+
+    <form action="/bty/<%=btys.id%>?_method=PUT" method="POST">
+
+    <div class="container">
+        <div class="container">
+            <div class="form-group">
+                <label>Date:</label>
+                <input type="date" id="date" name="date" class="form-control" value="<%=btys.date%>" />
+            </div>
+
+        <div class="form-group">
+            <label for="entry">Workout Type:</label>
+            <input type="text" name="workoutType" class="form-control" value="<%=btys.workoutType%>"/>
+        </div>
+
+        <div class="form-group">
+            <label>Current Weight:</label>
+            <input type="text" name="weight" class="form-control" value="<%=btys.weight%>" />
+        </div>
+
+        <br/>
+
+        <div class="form-group">
+            <label>Excercise List:</label>
+            <br/>
+            <textarea name="workoutList" class="form-control" rows="10" cols="40"><%=btys.workoutList%></textarea>
+        </div>
+        <div class="form-group">
+            <label>Additional Notes:</label>
+            <br/>
+            <textarea name="notes" class="form-control" rows="7" cols="40"><%=btys.notes%></textarea>
+        </div>
+    </div>
+        <br/>
+
+        <input type="submit" class="btn btn-primary">
+
+        <a href="/bty">Cancel</a>
+
+    </form>
+</div>
+</body>

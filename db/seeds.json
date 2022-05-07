@@ -1,0 +1,16 @@
+[
+    {
+       "workoutType":"Upper Body",
+       "date":"May-03-2022",
+       "weight":174,
+       "workoutList":"ChestPress, Incline Bench Press, dumbbell flys",
+       "notes":"Need to better my form for dumbbell flys"
+    },
+    {
+        "workoutType":"Lower Body",
+        "date":"May-01-2022",
+        "weight":172.3,
+        "workoutList":"Barbell Squats, Leg Extensions, Hamstring Curls",
+        "notes":"Work on depth for squats"
+     }
+]

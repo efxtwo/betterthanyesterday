@@ -1,0 +1,26 @@
+<body>
+    
+ 
+<div class="new">
+        <h1 id="workoutIndex">Post Workout Entry Log</h1>
+
+        <button class="btn btn-primary" onclick="location.href='/bty/new'">New Entry</button>
+    
+    <ul class="list-group">
+        <% btys.forEach(post => { %>
+            <li id="listEntries">
+                <input class="btn btn-outline-dark" type="button" onclick="location.href='/bty/<%=post.id%>'" value="<%=post.workoutType %> <%=post.date%>">
+                <form action="/bty/<%=post.id%>?_method=DELETE" method="POST">
+                    <input type="submit" value="Delete" class="btn btn-danger" />
+                </form>
+    
+            </li>
+            
+        <% }); %>
+    </ul>
+    
+</div>
+    
+</div>
+    
+</body>
